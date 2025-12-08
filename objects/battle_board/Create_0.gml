@@ -6,6 +6,7 @@ Vertex = [ ]
 Vertex_Online = [ ]
 color = c_white
 alpha = 1
+isCollide = array_create(4, false);
 
 // 判断点是否在旋转后的多边形内
 // 传入参数:
@@ -65,17 +66,12 @@ function RelativeContains(_x, _y, _listVertex = cover ? Vertex_Online : Vertex, 
 //     _listVertex: 顶点数组
 //     _angle: 旋转角度(可选)
 // [最近点的x, y坐标]
-function Limit(_x, _y, _listVertex = !cover ? Vertex_Online : Vertex, _angle = image_angle) {
+function Limit(_x, _y, _listVertex = cover ? Vertex_Online : Vertex, _angle = image_angle) {
     var count = array_length(_listVertex);
     if (count == 0) return [_x, _y];
 
     var localX = _x - x;
     var localY = _y - y;
-    
-	if (RelativeContains(localX, localY, _listVertex, _angle)) {
-        return [_x, _y];
-    }
-    
     var closestX = 0;
     var closestY = 0;
     var minDist = 1000000;

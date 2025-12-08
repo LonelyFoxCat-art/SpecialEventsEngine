@@ -1,14 +1,66 @@
-var AllBoard = InstanceGetList(battle_board);	// 获取所有框
+var boards = InstanceGetList(battle_board);
+var board_count = array_length(boards);
+if (board_count == 0) exit;
 
-// 初始化边界检查
-var BoundaryChecks = [
-	{ offsetX: 0, offsetY: sprite_height / 2, adjustX: 0, adjustY: -sprite_height / 2 },  // Bottom edge
-	{ offsetX: 0, offsetY: -sprite_height / 2, adjustX: 0, adjustY: sprite_height / 2 },  // Top edge
-	{ offsetX: sprite_width / 2, offsetY: 0, adjustX: -sprite_width / 2, adjustY: 0 },    // Right edge
-	{ offsetX: -sprite_width / 2, offsetY: 0, adjustX: sprite_width / 2, adjustY: 0 }     // Left edge
+var edge_offsets = [
+    [0,  sprite_height / 2,  0, -sprite_height / 2],
+    [0, -sprite_height / 2,  0,  sprite_height / 2],
+    [sprite_width / 2,  0, -sprite_width / 2,  0],
+    [-sprite_width / 2, 0,  sprite_width / 2,  0]
 ];
 
-// 对照所有框检查每个边界点
-for (var i = 0; i < array_length(BoundaryChecks); i++) {
-	
+var in_noncover = array_create(4, false);
+var in_cover    = array_create(4, false);
+var first_cover = array_create(4, 0);
+
+for (var i = 0; i < board_count; i++) {
+    var board = boards[i];
+    for (var d = 0; d < 4; d++) {
+        var tx = x + edge_offsets[d][0];
+        var ty = y + edge_offsets[d][1];
+        if (board.Contains(tx, ty)) {
+            if (!board.cover) {
+                in_cover[d] = false;
+                in_noncover[d] = true;
+            } else {
+                if (!in_cover[d]) first_cover[d] = i;
+                in_cover[d] = true;
+            }
+        }
+    }
+}
+
+for (var pass = 0; pass < 2; pass++) {
+    var is_cover_pass = (pass == 0);
+    var best_dist = -1;
+    
+    for (var d = 0; d < 4; d++) {
+        var need_process = is_cover_pass ? in_cover[d] : !in_noncover[d];
+        if (!need_process) continue;
+        
+        var start_i = is_cover_pass ? first_cover[d] : 0;
+        var nearest_x, nearest_y, nearest_dist = -1;
+        
+        for (var i = start_i; i < board_count; i++) {
+            var board = boards[i];
+            var include = is_cover_pass ? (!board.cover || board.Contains(x + edge_offsets[d][0], y + edge_offsets[d][1])) : !board.cover;
+            if (!include) continue;
+            
+            var tx = x + edge_offsets[d][0];
+            var ty = y + edge_offsets[d][1];
+            var lp = board.Limit(tx, ty);
+            var dist = point_distance(tx, ty, lp[0], lp[1]);
+            if (nearest_dist == -1 || dist < nearest_dist) {
+                nearest_dist = dist;
+                nearest_x = lp[0];
+                nearest_y = lp[1];
+            }
+        }
+        
+        if (nearest_dist != -1 && (best_dist == -1 || nearest_dist <= best_dist)) {
+            x = nearest_x + edge_offsets[d][2];
+            y = nearest_y + edge_offsets[d][3];
+            best_dist = nearest_dist;
+        }
+    }
 }

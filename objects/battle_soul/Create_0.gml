@@ -12,3 +12,8 @@ move = 0
 
 // 灵魂类型接口
 OnSoul = undefined;
+
+
+    last_x = x;
+    last_y = y;
+    is_set = true;
