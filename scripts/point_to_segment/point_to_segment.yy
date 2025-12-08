@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"point_to_segment",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"point_to_segment",
+  "parent":{
+    "name":"Geometry",
+    "path":"folders/脚本/Tool/Math/Geometry.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

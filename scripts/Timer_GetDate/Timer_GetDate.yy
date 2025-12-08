@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Timer_GetDate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Timer_GetDate",
+  "parent":{
+    "name":"Timer",
+    "path":"folders/脚本/System/Timer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

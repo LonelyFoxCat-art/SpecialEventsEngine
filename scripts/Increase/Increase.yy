@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Increase",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Increase",
+  "parent":{
+    "name":"Tool",
+    "path":"folders/脚本/Tool.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

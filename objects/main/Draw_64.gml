@@ -1,0 +1,1 @@
+global.structure.Renewal("DrawGUI");

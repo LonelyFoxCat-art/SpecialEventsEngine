@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"collision_mouse_rectangle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"collision_mouse_rectangle",
+  "parent":{
+    "name":"Collision",
+    "path":"folders/脚本/Tool/Collision.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

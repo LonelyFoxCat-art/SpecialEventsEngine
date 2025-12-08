@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"is_finite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_finite",
+  "parent":{
+    "name":"NumberTheory",
+    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Lang_Custom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Lang_Custom",
+  "parent":{
+    "name":"Language",
+    "path":"folders/脚本/System/Language.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

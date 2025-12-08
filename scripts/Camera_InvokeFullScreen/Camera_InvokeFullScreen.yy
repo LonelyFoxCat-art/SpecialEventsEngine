@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Camera_InvokeFullScreen",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Camera_InvokeFullScreen",
+  "parent":{
+    "name":"Camera",
+    "path":"folders/脚本/System/Camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Queue_Destroy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Queue_Destroy",
+  "parent":{
+    "name":"Queue",
+    "path":"folders/脚本/System/Queue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

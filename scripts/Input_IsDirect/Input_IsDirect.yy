@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Input_IsDirect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Input_IsDirect",
+  "parent":{
+    "name":"Input",
+    "path":"folders/脚本/System/Input.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

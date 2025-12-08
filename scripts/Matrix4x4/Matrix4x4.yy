@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Matrix4x4",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Matrix4x4",
+  "parent":{
+    "name":"Matrix",
+    "path":"folders/脚本/Tool/Math/LinearAlgebra/Matrix.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

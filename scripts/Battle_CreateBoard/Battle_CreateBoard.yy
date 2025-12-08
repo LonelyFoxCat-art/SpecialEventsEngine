@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_CreateBoard",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_CreateBoard",
+  "parent":{
+    "name":"Board",
+    "path":"folders/脚本/Battle/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

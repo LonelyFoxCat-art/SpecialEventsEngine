@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Ray",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Ray",
+  "parent":{
+    "name":"Geometry",
+    "path":"folders/脚本/Tool/Math/Geometry.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

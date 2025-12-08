@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"array_includes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_includes",
+  "parent":{
+    "name":"Array",
+    "path":"folders/脚本/Tool/Array.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

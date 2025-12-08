@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"segments_intersect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"segments_intersect",
+  "parent":{
+    "name":"Geometry",
+    "path":"folders/脚本/Tool/Math/Geometry.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

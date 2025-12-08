@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Encounter_Init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Encounter_Init",
+  "parent":{
+    "name":"Encounter",
+    "path":"folders/脚本/System/Encounter.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

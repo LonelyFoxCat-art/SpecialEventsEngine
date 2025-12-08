@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"power_mod",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"power_mod",
+  "parent":{
+    "name":"NumberTheory",
+    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

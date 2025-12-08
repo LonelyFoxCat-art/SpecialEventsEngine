@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"make_moving_average",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"make_moving_average",
+  "parent":{
+    "name":"Math",
+    "path":"folders/脚本/Tool/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

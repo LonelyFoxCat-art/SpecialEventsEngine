@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Shaker_IsExist",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Shaker_IsExist",
+  "parent":{
+    "name":"Shaker",
+    "path":"folders/脚本/System/Shaker.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

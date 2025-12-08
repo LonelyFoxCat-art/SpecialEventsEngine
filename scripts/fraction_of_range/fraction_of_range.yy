@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fraction_of_range",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fraction_of_range",
+  "parent":{
+    "name":"Math",
+    "path":"folders/脚本/Tool/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

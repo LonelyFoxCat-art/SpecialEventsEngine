@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Queue_Peek",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Queue_Peek",
+  "parent":{
+    "name":"Queue",
+    "path":"folders/脚本/System/Queue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

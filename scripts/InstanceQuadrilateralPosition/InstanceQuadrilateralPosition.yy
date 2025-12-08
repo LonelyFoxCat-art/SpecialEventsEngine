@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"InstanceQuadrilateralPosition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InstanceQuadrilateralPosition",
+  "parent":{
+    "name":"Instance",
+    "path":"folders/脚本/Tool/Instance.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

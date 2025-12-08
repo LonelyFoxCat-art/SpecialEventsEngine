@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fit_rect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fit_rect",
+  "parent":{
+    "name":"Math",
+    "path":"folders/脚本/Tool/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

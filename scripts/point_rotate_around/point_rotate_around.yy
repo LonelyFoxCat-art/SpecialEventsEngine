@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"point_rotate_around",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"point_rotate_around",
+  "parent":{
+    "name":"Geometry",
+    "path":"folders/脚本/Tool/Math/Geometry.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

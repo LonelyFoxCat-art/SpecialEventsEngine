@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"variable_get",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"variable_get",
+  "parent":{
+    "name":"Variable",
+    "path":"folders/脚本/Tool/Variable.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

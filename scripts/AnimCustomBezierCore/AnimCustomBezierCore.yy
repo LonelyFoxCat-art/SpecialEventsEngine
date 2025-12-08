@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"AnimCustomBezierCore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AnimCustomBezierCore",
+  "parent":{
+    "name":"Animation",
+    "path":"folders/脚本/System/Animation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

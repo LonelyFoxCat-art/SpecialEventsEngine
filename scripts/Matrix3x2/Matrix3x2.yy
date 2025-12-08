@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Matrix3x2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Matrix3x2",
+  "parent":{
+    "name":"Matrix",
+    "path":"folders/脚本/Tool/Math/LinearAlgebra/Matrix.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Select",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Select",
+  "parent":{
+    "name":"Control",
+    "path":"folders/脚本/Tool/Control.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

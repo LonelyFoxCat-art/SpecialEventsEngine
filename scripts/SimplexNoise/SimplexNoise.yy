@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SimplexNoise",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SimplexNoise",
+  "parent":{
+    "name":"Math",
+    "path":"folders/脚本/Tool/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sinh",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sinh",
+  "parent":{
+    "name":"Trigonometry",
+    "path":"folders/脚本/Tool/Math/Geometry/Trigonometry.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

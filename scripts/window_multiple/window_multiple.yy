@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"window_multiple",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"window_multiple",
+  "parent":{
+    "name":"Tool",
+    "path":"folders/脚本/Tool.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

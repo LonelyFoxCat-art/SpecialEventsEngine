@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GetCoordinates",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetCoordinates",
+  "parent":{
+    "name":"Position",
+    "path":"folders/脚本/Tool/Position.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

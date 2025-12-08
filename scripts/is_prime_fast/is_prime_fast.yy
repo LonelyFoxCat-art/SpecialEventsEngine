@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"is_prime_fast",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_prime_fast",
+  "parent":{
+    "name":"NumberTheory",
+    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

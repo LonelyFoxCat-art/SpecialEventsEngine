@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_board",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_board",
+  "parent":{
+    "name":"Draw",
+    "path":"folders/脚本/Draw.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

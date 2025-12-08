@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Queue_IsExist",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Queue_IsExist",
+  "parent":{
+    "name":"Queue",
+    "path":"folders/脚本/System/Queue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

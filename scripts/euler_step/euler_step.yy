@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"euler_step",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"euler_step",
+  "parent":{
+    "name":"NumberTheory",
+    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Player_GetSpeedTotal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_GetSpeedTotal",
+  "parent":{
+    "name":"Total",
+    "path":"folders/脚本/System/Player/Total.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

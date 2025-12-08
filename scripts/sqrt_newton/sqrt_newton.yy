@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sqrt_newton",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sqrt_newton",
+  "parent":{
+    "name":"NumberTheory",
+    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

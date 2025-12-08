@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"object_get_depth",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"object_get_depth",
+  "parent":{
+    "name":"Instance",
+    "path":"folders/脚本/Tool/Instance.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

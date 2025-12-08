@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Player_GetLvDef",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_GetLvDef",
+  "parent":{
+    "name":"Lv",
+    "path":"folders/脚本/System/Player/Lv.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

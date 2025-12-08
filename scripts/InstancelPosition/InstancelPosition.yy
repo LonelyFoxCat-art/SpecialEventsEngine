@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"InstancelPosition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InstancelPosition",
+  "parent":{
+    "name":"Instance",
+    "path":"folders/脚本/Tool/Instance.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shader_pixelate",
+  "name":"shader_pixelate",
+  "parent":{
+    "name":"Screen",
+    "path":"folders/着色器/Screen.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

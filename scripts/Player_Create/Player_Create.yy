@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Player_Create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_Create",
+  "parent":{
+    "name":"Player",
+    "path":"folders/脚本/System/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

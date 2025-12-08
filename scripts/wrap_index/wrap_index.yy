@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"wrap_index",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"wrap_index",
+  "parent":{
+    "name":"Tool",
+    "path":"folders/脚本/Tool.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

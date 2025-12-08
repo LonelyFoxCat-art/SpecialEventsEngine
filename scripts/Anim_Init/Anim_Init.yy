@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Anim_Init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Anim_Init",
+  "parent":{
+    "name":"Animation",
+    "path":"folders/脚本/System/Animation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Input_IsReleased",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Input_IsReleased",
+  "parent":{
+    "name":"Input",
+    "path":"folders/脚本/System/Input.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

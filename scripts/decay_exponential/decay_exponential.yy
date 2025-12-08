@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"decay_exponential",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"decay_exponential",
+  "parent":{
+    "name":"NumberTheory",
+    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

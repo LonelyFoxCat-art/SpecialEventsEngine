@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_to_debug_string",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_to_debug_string",
+  "parent":{
+    "name":"Struct",
+    "path":"folders/脚本/Tool/Struct.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

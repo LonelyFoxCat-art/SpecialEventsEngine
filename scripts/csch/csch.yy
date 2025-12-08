@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"csch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"csch",
+  "parent":{
+    "name":"Trigonometry",
+    "path":"folders/脚本/Tool/Math/Geometry/Trigonometry.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

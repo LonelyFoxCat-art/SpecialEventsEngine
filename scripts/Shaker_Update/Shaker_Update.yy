@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Shaker_Update",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Shaker_Update",
+  "parent":{
+    "name":"Shaker",
+    "path":"folders/脚本/System/Shaker.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

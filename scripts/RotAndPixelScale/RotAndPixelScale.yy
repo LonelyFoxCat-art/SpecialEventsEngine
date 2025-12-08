@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RotAndPixelScale",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RotAndPixelScale",
+  "parent":{
+    "name":"Position",
+    "path":"folders/脚本/Tool/Position.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

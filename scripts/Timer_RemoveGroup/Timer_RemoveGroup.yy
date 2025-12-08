@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Timer_RemoveGroup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Timer_RemoveGroup",
+  "parent":{
+    "name":"Timer",
+    "path":"folders/脚本/System/Timer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Buff_Init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Buff_Init",
+  "parent":{
+    "name":"Buff",
+    "path":"folders/脚本/System/Buff.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

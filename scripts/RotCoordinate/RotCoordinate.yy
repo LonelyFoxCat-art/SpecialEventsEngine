@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RotCoordinate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RotCoordinate",
+  "parent":{
+    "name":"Position",
+    "path":"folders/脚本/Tool/Position.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

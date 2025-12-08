@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"array_sum",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_sum",
+  "parent":{
+    "name":"Array",
+    "path":"folders/脚本/Tool/Array.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

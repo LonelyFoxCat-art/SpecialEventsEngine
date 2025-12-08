@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Structure",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Structure",
+  "parent":{
+    "name":"System",
+    "path":"folders/脚本/System.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

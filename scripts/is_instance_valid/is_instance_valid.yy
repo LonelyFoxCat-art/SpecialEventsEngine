@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"is_instance_valid",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_instance_valid",
+  "parent":{
+    "name":"Instance",
+    "path":"folders/脚本/Tool/Instance.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

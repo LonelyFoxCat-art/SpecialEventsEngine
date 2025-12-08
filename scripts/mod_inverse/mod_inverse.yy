@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mod_inverse",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mod_inverse",
+  "parent":{
+    "name":"NumberTheory",
+    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

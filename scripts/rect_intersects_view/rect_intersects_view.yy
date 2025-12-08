@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"rect_intersects_view",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"rect_intersects_view",
+  "parent":{
+    "name":"Tool",
+    "path":"folders/脚本/Tool.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

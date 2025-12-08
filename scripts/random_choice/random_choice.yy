@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"random_choice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"random_choice",
+  "parent":{
+    "name":"Random",
+    "path":"folders/脚本/Tool/Math/Random.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

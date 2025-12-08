@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Player_GetDefTotal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_GetDefTotal",
+  "parent":{
+    "name":"Total",
+    "path":"folders/脚本/System/Player/Total.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

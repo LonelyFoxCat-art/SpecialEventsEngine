@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Plane",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Plane",
+  "parent":{
+    "name":"Geometry",
+    "path":"folders/脚本/Tool/Math/Geometry.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
