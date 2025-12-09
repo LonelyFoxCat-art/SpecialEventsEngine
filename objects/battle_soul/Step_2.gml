@@ -2,17 +2,19 @@ var boards = InstanceGetList(battle_board);
 var board_count = array_length(boards);
 if (board_count == 0) exit;
 
+// 边界偏移：[检测x, 检测y, 修正x, 修正y]
 var edge_offsets = [
-    [0,  sprite_height / 2,  0, -sprite_height / 2],
-    [0, -sprite_height / 2,  0,  sprite_height / 2],
-    [sprite_width / 2,  0, -sprite_width / 2,  0],
-    [-sprite_width / 2, 0,  sprite_width / 2,  0]
+    [0,  sprite_height / 2,  0, -sprite_height / 2], // 下
+    [0, -sprite_height / 2,  0,  sprite_height / 2], // 上
+    [sprite_width / 2,  0, -sprite_width / 2,  0],   // 右
+    [-sprite_width / 2, 0,  sprite_width / 2,  0]    // 左
 ];
 
-var in_noncover = array_create(4, false);
-var in_cover    = array_create(4, false);
-var first_cover = array_create(4, 0);
+var in_noncover = array_create(4, false); // 是否在任意 non-cover 框内
+var in_cover    = array_create(4, false); // 是否在任意 cover 框内
+var first_cover = array_create(4, 0);     // 首个碰到的 cover 框索引（用于优化搜索）
 
+// 阶段1：检测所有框的碰撞状态 —— 关键修复点在此！
 for (var i = 0; i < board_count; i++) {
     var board = boards[i];
     for (var d = 0; d < 4; d++) {
@@ -20,8 +22,7 @@ for (var i = 0; i < board_count; i++) {
         var ty = y + edge_offsets[d][1];
         if (board.Contains(tx, ty)) {
             if (!board.cover) {
-                in_cover[d] = false;
-                in_noncover[d] = true;
+                in_noncover[d] = true; // 仅标记在 non-cover 内，不干扰 cover 状态
             } else {
                 if (!in_cover[d]) first_cover[d] = i;
                 in_cover[d] = true;
@@ -30,6 +31,7 @@ for (var i = 0; i < board_count; i++) {
     }
 }
 
+// 阶段2 & 3：统一处理 cover 和 non-cover 修正
 for (var pass = 0; pass < 2; pass++) {
     var is_cover_pass = (pass == 0);
     var best_dist = -1;
@@ -43,7 +45,9 @@ for (var pass = 0; pass < 2; pass++) {
         
         for (var i = start_i; i < board_count; i++) {
             var board = boards[i];
-            var include = is_cover_pass ? (!board.cover || board.Contains(x + edge_offsets[d][0], y + edge_offsets[d][1])) : !board.cover;
+            var include = is_cover_pass 
+                ? (board.cover && board.Contains(x + edge_offsets[d][0], y + edge_offsets[d][1]))
+                : !board.cover;
             if (!include) continue;
             
             var tx = x + edge_offsets[d][0];

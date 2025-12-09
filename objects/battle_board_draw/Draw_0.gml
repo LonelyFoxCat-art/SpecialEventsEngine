@@ -1,8 +1,11 @@
-for (var i = 0; i < instance_number(battle_board); i++) {
-	var object = instance_find(battle_board, i)
-    if (instance_exists(object)) {
-		with object event_user(0)
-    }
+var Inst = InstanceGetList(battle_board)
+array_sort(Inst, function(a, b) {
+if (a.depth == b.depth) return a.Index > b.Index;
+	return a.depth < b.depth;
+})
+
+for (var i = 0; i < array_length(Inst); i++) {
+	if (instance_exists(Inst[i])) with(Inst[i]) event_user(0);
 }
 
 draw_set_alpha(1);

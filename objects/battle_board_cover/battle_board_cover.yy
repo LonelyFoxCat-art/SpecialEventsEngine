@@ -12,8 +12,8 @@
     "path":"folders/物体/Battle/Board.yy",
   },
   "parentObjectId":{
-    "name":"battle_board",
-    "path":"objects/battle_board/battle_board.yy",
+    "name":"battle_board_rectangle",
+    "path":"objects/battle_board_rectangle/battle_board_rectangle.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
