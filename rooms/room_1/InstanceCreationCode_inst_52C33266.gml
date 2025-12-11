@@ -1,4 +1,4 @@
-Index = 2
+depth = -1000
 width = 40
 height = 10
 
