@@ -14,3 +14,8 @@ global.structure.Register("Queue", Queue_Init);
 global.structure.Register("Timer", Timer_Init);
 global.structure.Register("Input", Input_Init);
 global.structure.Register("Buff", Buff_Init);
+
+////时间
+time = 0
+mintime = 0
+hortime = 0

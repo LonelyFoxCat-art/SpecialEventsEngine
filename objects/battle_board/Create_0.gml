@@ -1,28 +1,32 @@
-if !(instance_exists(battle_board_draw)) instance_create(0, 0, battle_board_draw)
+if !instance_exists(battle_board_draw) instance_create(0, 0, battle_board_draw)
+
 depth = -500
 
 Index = 0
 
 cover = false
 
-Vertex = [ ]
+Vertex = [];
+Vertex_Outline = [];
+DivideVertex = [];
+isCollide = array_create(4, false)
+
+width = 70
+height = 65
 
 color = c_white
 alpha = 1
 
 
+
+
 // 判断点是否在旋转后的多边形内
-// 传入参数:
-//     _x: 点的横坐标
-//     _y: 点的纵坐标
-//     _listVertex: 别管这个
-// [返回点是否在多边形内]
-function Contains(_x, _y, _listVertex = Vertex) {
+function Contains(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex) {
     return RelativeContains(_x - x, _y - y, _listVertex);
 }
 
 // 判断点是否在旋转后的多边形内
-function RelativeContains(_x, _y, _listVertex = Vertex) {
+function RelativeContains(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex) {
     var size = array_length(_listVertex);
     if (size < 3) return false;
 
@@ -72,7 +76,7 @@ function RelativeContains(_x, _y, _listVertex = Vertex) {
 }
 
 // 返回离旋转多边形边框最近的点
-function Limit(_x, _y, _listVertex = Vertex) {
+function Limit(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex) {
     var size = array_length(_listVertex);
     if (size == 0) return [_x, _y];
     if (size == 1) {

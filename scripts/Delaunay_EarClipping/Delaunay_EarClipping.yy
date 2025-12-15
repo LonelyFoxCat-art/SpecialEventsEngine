@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Delaunay_EarClipping",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Delaunay_EarClipping",
+  "parent":{
+    "name":"Delaunay",
+    "path":"folders/脚本/Tool/Math/Delaunay.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,21 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"battle_board_rectangle",
+  "%Name":"ui_menu",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_board_rectangle",
+  "name":"ui_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Board",
-    "path":"folders/物体/Battle/Board.yy",
+    "name":"Ui",
+    "path":"folders/物体/Ui.yy",
   },
-  "parentObjectId":{
-    "name":"battle_board",
-    "path":"objects/battle_board/battle_board.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
