@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Quaternion",
+  "%Name":"RelativeContains",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Quaternion",
+  "name":"RelativeContains",
   "parent":{
-    "name":"LinearAlgebra",
-    "path":"folders/脚本/Tool/Math/LinearAlgebra.yy",
+    "name":"Collision",
+    "path":"folders/脚本/Tool/Collision.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

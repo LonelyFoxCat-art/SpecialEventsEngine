@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Quaternion",
+  "%Name":"is_Matrix",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Quaternion",
+  "name":"is_Matrix",
   "parent":{
-    "name":"LinearAlgebra",
-    "path":"folders/脚本/Tool/Math/LinearAlgebra.yy",
+    "name":"Matrix",
+    "path":"folders/脚本/Tool/Math/LinearAlgebra/Matrix.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

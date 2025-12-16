@@ -8,9 +8,7 @@ function Delaunay_EarClipping(vertices) {
     if (Length < 3) return [];
 
     var indices = [];
-    for (var i = 0; i < Length; i++) {
-        array_push(indices, i);
-    }
+    for (var i = 0; i < Length; i++) array_push(indices, i);
 
     var triangles = [];
 
@@ -67,14 +65,10 @@ function Delaunay_EarClipping(vertices) {
             }
         }
 
-        if (!ear_found) {
-            break;
-        }
+        if (!ear_found) break;
     }
 
-    if (array_length(indices) == 3) {
-        array_push(triangles, [indices[0], indices[1], indices[2]]);
-    }
+    if (array_length(indices) == 3) array_push(triangles, [indices[0], indices[1], indices[2]]);
 
     return triangles;
 }

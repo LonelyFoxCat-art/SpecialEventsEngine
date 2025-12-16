@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"Note1",
+  "name":"Note1",
+  "parent":{
+    "name":"便签",
+    "path":"folders/便签.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

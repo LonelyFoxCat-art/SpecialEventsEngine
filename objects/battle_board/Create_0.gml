@@ -30,13 +30,13 @@ function RelativeContains(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex)
     var size = array_length(_listVertex);
     if (size < 3) return false;
 
-    var rot = new Matrix3x2().CreateRotation(-image_angle);
-    var p = Vector2.Transform(new Vector2(_x, _y), rot);
+    var rot = Matrix3x2.CreateRotation(-image_angle);
+    var p = Vector2.Transform(Vector2(_x, _y), rot);
 
     var isAllHor = true, prevTrend, prevHasInter;
-    var prev = new Vector2(_listVertex[size - 1].x, _listVertex[size - 1].y);
+    var prev = Vector2(_listVertex[size - 1].x, _listVertex[size - 1].y);
     for (var i = size - 2; i >= 0; i--) {
-        var cur = new Vector2(_listVertex[i].x, _listVertex[i].y);
+        var cur = Vector2(_listVertex[i].x, _listVertex[i].y);
         if (prev.y != cur.y) {
             isAllHor = false;
             prevTrend = cur.y < prev.y;
@@ -48,9 +48,9 @@ function RelativeContains(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex)
     if (isAllHor) return false;
 
     var intersections = [], count = 0;
-    prev = new Vector2(_listVertex[size - 1].x, _listVertex[size - 1].y);
+    prev = Vector2(_listVertex[size - 1].x, _listVertex[size - 1].y);
     for (var i = 0; i < size; i++) {
-        var cur = new Vector2(_listVertex[i].x, _listVertex[i].y);
+        var cur = Vector2(_listVertex[i].x, _listVertex[i].y);
         if (prev.y != cur.y) {
             var trend = cur.y > prev.y;
             var inYRange = (p.y >= min(prev.y, cur.y) && p.y <= max(prev.y, cur.y));
@@ -81,17 +81,17 @@ function Limit(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex) {
     if (size == 0) return [_x, _y];
     if (size == 1) {
         var v = _listVertex[0];
-        var r = Vector2.Transform(new Vector2(v.x, v.y), new Matrix3x2().CreateRotation(image_angle));
+        var r = Vector2.Transform(Vector2(v.x, v.y), Matrix3x2.CreateRotation(image_angle));
         return [r.x + x, r.y + y];
     }
 
-    var local = new Vector2(_x - x, _y - y);
-    var p = Vector2.Transform(local, new Matrix3x2().CreateRotation(-image_angle));
+    var local = Vector2(_x - x, _y - y);
+    var p = Vector2.Transform(local, Matrix3x2.CreateRotation(-image_angle));
 
     var nearest, minDist = -1;
-    var prev = new Vector2(_listVertex[size - 1].x, _listVertex[size - 1].y);
+    var prev = Vector2(_listVertex[size - 1].x, _listVertex[size - 1].y);
     for (var i = 0; i < size; i++) {
-        var cur = new Vector2(_listVertex[i].x, _listVertex[i].y);
+        var cur = Vector2(_listVertex[i].x, _listVertex[i].y);
         var edge = Vector2.Subtract(cur, prev);
         var toPrev = Vector2.Subtract(p, prev);
         var dot = Vector2.Dot(toPrev, edge);
@@ -113,6 +113,6 @@ function Limit(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex) {
         prev = cur;
     }
 
-    var r = Vector2.Transform(nearest, new Matrix3x2().CreateRotation(image_angle));
+    var r = Vector2.Transform(nearest, Matrix3x2.CreateRotation(image_angle));
     return [r.x + x, r.y + y];
 }

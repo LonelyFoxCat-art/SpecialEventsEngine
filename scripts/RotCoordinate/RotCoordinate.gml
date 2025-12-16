@@ -13,7 +13,7 @@ function RotCoordinate() {
         angle = argument[1];
         scale = argument[2] ?? 1;
     } else {
-        vec = new Vector2(argument[0], argument[1]);
+        vec = Vector2(argument[0], argument[1]);
         angle = argument[2];
         scale = argument[3] ?? 1;
     }
@@ -27,8 +27,8 @@ function RotCoordinate() {
     
     // 应用缩放
     if (is_struct(scale)) {
-        return new Vector2(_x * scale.x, _y * scale.y); // 非均匀缩放
+        return Vector2(_x * scale.x, _y * scale.y); // 非均匀缩放
     } else {
-        return new Vector2(_x * scale, _y * scale); // 均匀缩放
+        return Vector2(_x * scale, _y * scale); // 均匀缩放
     }
 }

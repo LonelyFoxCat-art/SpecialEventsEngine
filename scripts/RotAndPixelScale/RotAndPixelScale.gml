@@ -14,13 +14,13 @@ function RotAndPixelScale() {
         angle = argument[1];
         pixel_scale = argument_count > 2 ? argument[2] : 0;
     } else {
-        vec = new Vector2(argument[0], argument[1]);
+        vec = Vector2(argument[0], argument[1]);
         angle = argument[2];
         pixel_scale = argument_count > 3 ? argument[3] : 0;
     }
     
     // 先计算缩放（在局部坐标系中）
-    var scaled = new Vector2(vec.x, vec.y);
+    var scaled = Vector2(vec.x, vec.y);
     
     if (vec.x != 0 || vec.y != 0) {
         if (is_struct(pixel_scale)) {
@@ -37,7 +37,7 @@ function RotAndPixelScale() {
     // 然后旋转缩放后的向量
     var vsin = dsin(angle);
     var vcos = dcos(angle);
-    return new Vector2(
+    return Vector2(
         scaled.x * vcos - scaled.y * vsin,
         scaled.x * vsin + scaled.y * vcos
     );
