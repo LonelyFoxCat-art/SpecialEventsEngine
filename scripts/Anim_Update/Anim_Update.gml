@@ -14,7 +14,7 @@ function Anim_Update(AnimSystem) {
 		if (anim.Delay > 0) { anim.Delay --; continue; }
         if (anim.Pause) continue;
         
-        if (variable_struct_exists(anim, "IsBezier") && anim.IsBezier) {
+        if (struct_exists(anim, "IsBezier") && anim.IsBezier) {
             var time_delta = dt * global_speed * anim.Speed;
             anim.Time += time_delta;
             
@@ -92,10 +92,10 @@ function Anim_Update(AnimSystem) {
                 
                 if (var_name == "x") value = pt.x;
                 else if (var_name == "y") value = pt.y;
-                else if (var_name == "z" && variable_struct_exists(pt, "z")) value = pt.z;
-                else value = (variable_struct_exists(pt, "y")) ? pt.y : pt.x;
+                else if (var_name == "z" && struct_exists(pt, "z")) value = pt.z;
+                else value = (struct_exists(pt, "y")) ? pt.y : pt.x;
                 
-                if (variable_exists(anim.Target, var_name)) variable_set(anim.Target, var_name, value);
+                if (struct_exists(anim.Target, var_name)) struct_set(anim.Target, var_name, value);
             }
             
             if (should_remove) array_delete(list, i, 1);

@@ -10,9 +10,9 @@ function Queue_Peek(Name) {
     if (Length == 0) return undefined;
     
     switch (QueueDate.type) {
-        case QueueType.LIFO:
+        case QUEUETYPE.LIFO:
             return QueueDate.data[Length - 1];
-        case QueueType.PRIORITY:
+        case QUEUETYPE.PRIORITY:
             return QueueDate.data[0].value;
         default:
             return QueueDate.data[0];

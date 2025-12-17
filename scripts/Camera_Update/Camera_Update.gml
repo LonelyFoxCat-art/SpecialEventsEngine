@@ -4,17 +4,19 @@
 
 function Camera_Update(Camera){
 	var CameraID = Camera_GetID()
-
+	var Width = Camera.Width/Camera.Xscale;
+	var Height = Camera.Height/Camera.Yscale;
+	
 	if(!instance_exists(Camera.Target)){
 		camera_set_view_target(CameraID, noone);
 		camera_set_view_pos(CameraID, Camera.X, Camera.Y);
 	}else{
 		camera_set_view_target(CameraID, Camera.Target);
-		camera_set_view_border(CameraID, Camera.Width/Camera.Xscale/2, Camera.Height/Camera.Yscale/2);
+		camera_set_view_border(CameraID, Width/2, Height/2);
 		Camera.X = camera_get_view_x(CameraID);
 		Camera.Y = camera_get_view_y(CameraID);
 	}
 	
-	camera_set_view_size(CameraID, Camera.Width/Camera.Xscale, Camera.Height/Camera.Yscale);
+	camera_set_view_size(CameraID, Width, Height);
 	camera_set_view_angle(CameraID, Camera.Angle);
 }

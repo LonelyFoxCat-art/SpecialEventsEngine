@@ -15,19 +15,19 @@ function Queue_Dequeue(Name) {
     var result;
     
     switch (QueueDate.type) {
-        case QueueType.DEFAULT:
-        case QueueType.CIRCULAR:
-        case QueueType.UNIQUE:
+        case QUEUETYPE.DEFAULT:
+        case QUEUETYPE.CIRCULAR:
+        case QUEUETYPE.UNIQUE:
             result = QueueDate.data[0];
             QueueDate.data = array_delete(QueueDate.data, 0, 1);
             break;
             
-        case QueueType.LIFO:
+        case QUEUETYPE.LIFO:
             result = QueueDate.data[Length - 1];
             QueueDate.data = array_delete(QueueDate.data, Length - 1, 1);
             break;
             
-        case QueueType.PRIORITY:
+        case QUEUETYPE.PRIORITY:
             result = QueueDate.data[0].value;
             QueueDate.data = array_delete(QueueDate.data, 0, 1);
             break;

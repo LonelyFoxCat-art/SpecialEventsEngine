@@ -5,6 +5,7 @@ function Encounter_Init(){
 	globalvar ENCOUNTER, ENCOUNTERTYPE;
 	
 	ENCOUNTER = {
+		TYPE: "Type",
 		MENUDIGLOG: "MenuDiglog",
 		QUICK: "Quick",
 		FELL: "Fell",

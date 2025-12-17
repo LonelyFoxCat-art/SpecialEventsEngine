@@ -1,14 +1,13 @@
-function Encounter_Create(Type, Enemy = [], Music = noone) {
-    if (Type != ENCOUNTERTYPE.UNDERTALE && Type != ENCOUNTERTYPE.DELTARUNE) return -1;
-    
+function Encounter_Create(Enemy = [], Music = noone, PauseMusic = false) {
     var EncounterSystem = StorageData.Invoke("Encounter");
     var idx = array_length(EncounterSystem.EncounterList);
     
     var encounter = {
-		Type: Type,
+		Type: ENCOUNTERTYPE.UNDERTALE,
         Enemy: Enemy,
 		MenuDiglog: "* Test.",
 		Music: Music,
+		PauseMusic: PauseMusic,
 		Quick: false,
 		Fell: false,
 		Soul: [40, 454]

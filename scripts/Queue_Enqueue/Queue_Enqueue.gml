@@ -11,21 +11,21 @@ function Queue_Enqueue(Name, value, priority = 0) {
     var Queue = StorageData.Invoke("Queue");
     var QueueDate = Queue.QueueList[$ Name];
     
-    if (QueueDate.type == QueueType.UNIQUE) {
+    if (QueueDate.type == QUEUETYPE.UNIQUE) {
         for (var i = 0; i < array_length(QueueDate.data); i++) {
             if (QueueDate.data[i] == value) return false;
         }
     }
     
     switch (QueueDate.type) {
-        case QueueType.DEFAULT:
-        case QueueType.CIRCULAR:
-        case QueueType.UNIQUE:
-        case QueueType.LIFO:
+        case QUEUETYPE.DEFAULT:
+        case QUEUETYPE.CIRCULAR:
+        case QUEUETYPE.UNIQUE:
+        case QUEUETYPE.LIFO:
             QueueDate.data = array_push(QueueDate.data, value);
             break;
             
-        case QueueType.PRIORITY:
+        case QUEUETYPE.PRIORITY:
             var item = { value: value, priority: priority };
             var inserted = false;
             for (var i = 0; i < array_length(QueueDate.data); i++) {
@@ -44,7 +44,7 @@ function Queue_Enqueue(Name, value, priority = 0) {
             return false;
     }
     
-    if (QueueDate.type == QueueType.CIRCULAR && array_length(QueueDate.data) > QueueDate.maxSize) {
+    if (QueueDate.type == QUEUETYPE.CIRCULAR && array_length(QueueDate.data) > QueueDate.maxSize) {
         var start = array_length(QueueDate.data) - QueueDate.maxSize;
         QueueDate.data = array_slice(QueueDate.data, start, QueueDate.maxSize);
     }
