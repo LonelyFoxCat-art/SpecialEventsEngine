@@ -4,6 +4,6 @@
 /// @returns {bool} 若存在返回 true，否则返回 false
 
 function Buff_IsExist(Name){
-	var Buff = global.structure.Invoke("Buff");
+	var Buff = StorageData.Invoke("Buff");
 	return struct_exists(Buff.BuffList, Name);
 }

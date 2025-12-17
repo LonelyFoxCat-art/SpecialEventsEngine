@@ -1,1 +1,1 @@
-global.structure.Renewal("DrawGUI");
+Store.Renewal("DrawGUI");

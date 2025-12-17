@@ -1,13 +1,13 @@
 {
   "$GMRoom":"v1",
-  "%Name":"room_1",
-  "creationCodeFile":"rooms/room_1/RoomCreationCode.gml",
+  "%Name":"room_battle",
+  "creationCodeFile":"rooms/room_battle/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_76A98487","path":"rooms/room_1/room_1.yy",},
-    {"name":"inst_5B7DED52","path":"rooms/room_1/room_1.yy",},
+    {"name":"inst_76A98487","path":"rooms/room_battle/room_battle.yy",},
+    {"name":"inst_5B7DED52","path":"rooms/room_battle/room_battle.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -17,7 +17,7 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4283190348,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"room_1",
+  "name":"room_battle",
   "parent":{
     "name":"房间",
     "path":"folders/房间.yy",

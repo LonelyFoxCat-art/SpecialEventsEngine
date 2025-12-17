@@ -1,7 +1,7 @@
 function Encounter_Create(Type, Enemy = [], Music = noone) {
     if (Type != ENCOUNTERTYPE.UNDERTALE && Type != ENCOUNTERTYPE.DELTARUNE) return -1;
     
-    var EncounterSystem = global.structure.Invoke("Encounter");
+    var EncounterSystem = StorageData.Invoke("Encounter");
     var idx = array_length(EncounterSystem.EncounterList);
     
     var encounter = {

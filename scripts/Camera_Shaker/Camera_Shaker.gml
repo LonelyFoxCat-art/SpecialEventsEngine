@@ -7,7 +7,7 @@
 /// @returns {bool} 始终返回 true，表示震动已触发
 
 function Camera_Shaker(Shake, Speed = 0, Random = false, Decrease = 1){
-	var Camera = global.structure.Invoke("Camera");
+	var Camera = StorageData.Invoke("Camera");
 	
 	Shaker_Create(Camera, "X", Shake, Speed, Random, Decrease);
 	Shaker_Create(Camera, "Y", Shake, Speed, Random, Decrease);

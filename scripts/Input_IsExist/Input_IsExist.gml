@@ -4,6 +4,6 @@
 /// @returns {bool} 若名称存在于 Input.KeyList 中则返回 true，否则返回 false
 
 function Input_IsExist(Name){
-    var Input = global.structure.Invoke("Input");
+    var Input = StorageData.Invoke("Input");
     return struct_exists(Input.KeyList, Name);
 }

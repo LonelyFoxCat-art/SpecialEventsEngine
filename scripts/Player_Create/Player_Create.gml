@@ -1,5 +1,5 @@
 function Player_Create(Name, Config = {}){
-	var PlayerData = global.structure.Invoke("Player");
+	var PlayerData = StorageData.Invoke("Player");
 	var PlayerList = PlayerData.PlayerList;
 	var PlayerStruct = {
 		Name: Name,

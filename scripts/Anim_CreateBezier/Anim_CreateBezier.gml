@@ -14,7 +14,7 @@ function Anim_CreateBezier(Target, VarNames, BezierController, Duration, Delay =
     if (!is_struct(BezierController) || !variable_struct_exists(BezierController, "getPointAt")) return "";
     if (Duration <= 0) return "";
     
-    var AnimSystem = global.structure.Invoke("Animation");
+    var AnimSystem = StorageData.Invoke("Animation");
     var currentID = AnimSystem.Animation_id;
     var targetStr = (Target == global) ? "global" : string(Target);
     var baseName = targetStr + "_" + string(VarNames[0]) + "_Bezier";

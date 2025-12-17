@@ -1,22 +1,33 @@
-/// @func Camera_InvokeFullScreen(Enabled = undefined)
-/// @desc 获取或设置相机的无边框全屏模式；在 tvOS 和 Android 上不支持，返回 false
-/// @arg {bool} [Enabled] - 若提供，则启用（true）或禁用（false）无边框全屏；若省略，则返回当前状态
-/// @returns {bool|real} 若传入 Enabled，操作成功返回 true；若未传入，返回当前 NoBorderFullScreen 的布尔值；在不支持的平台上返回 false
+/// @func Camera_InvokeFullScreen(Enabled)
+/// @desc 切换或查询无边框全屏模式状态。在非 TVOS 和 Android 平台上生效。
+/// @arg {bool} [Enabled] - 若提供，则启用（true）或禁用（false）无边框全屏；若省略，则返回当前是否处于该模式
+/// @returns {bool} 若查询模式（Enabled 为 undefined），返回当前 Enabled 状态；若执行切换操作，成功设置后返回 true，TVOS/Android 平台直接返回 false
 
 function Camera_InvokeFullScreen(Enabled = undefined){
-	var Camera = global.structure.Invoke("Camera");
-	if (os_type == os_tvos || os_type == os_android) return false;
-	if is_undefined(Enabled) return Camera.NoBorderFullScreen;
-	
-	if (Enabled) {
-		window_set_showborder(false);
-		window_set_rectangle(0, 0, display_get_width(), display_get_height());
-	} else {
+	var Camera = StorageData.Invoke("Camera");
+	var NoBorderFull = Camera.NoBorderFull;
+	var ResetWindow = function(Width, Height) {
+		window_set_size(Width, Height);
 		window_set_showborder(true);
-		window_set_size(Camera.Width, Camera.Height);
 		window_center();
 	}
 	
-    Camera.NoBorderFullScreen = Enabled;
+	if (os_type == os_tvos || os_type == os_android) return false;
+	if (is_undefined(Enabled)) return NoBorderFull.Enabled;
+	if (window_get_fullscreen()) {
+		ResetWindow(NoBorderFull.Width, NoBorderFull.Height);
+		return false;
+	}
+	
+	if (Enabled) {
+		NoBorderFull.Width = window_get_width();
+		NoBorderFull.Height = window_get_height();
+		window_set_showborder(false);
+		window_set_rectangle(0, 0, display_get_width(), display_get_height());
+	} else {
+		ResetWindow(NoBorderFull.Width, NoBorderFull.Height);
+	}
+	
+    NoBorderFull.Enabled = Enabled;
 	return true;
 }

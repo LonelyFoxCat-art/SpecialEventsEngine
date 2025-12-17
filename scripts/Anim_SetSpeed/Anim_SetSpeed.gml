@@ -6,7 +6,7 @@
 /// @returns {bool} 设置成功返回 true，失败（如无效 AnimName 或类型）返回 false
 
 function Anim_SetSpeed(Type, Speed = 1, AnimName = "") {
-    var AnimSystem = global.structure.Invoke("Animation");
+    var AnimSystem = StorageData.Invoke("Animation");
     
     if (Type == AnimType.GLOBAL) {
         AnimSystem.AnimSpeed = clamp(Speed, -10, 10);

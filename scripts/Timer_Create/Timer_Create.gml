@@ -8,7 +8,7 @@
 /// @arg {int} LoopCount - 循环次数，0 表示无限循环
 /// @returns {struct|bool} 创建成功返回计时器结构体，已存在同名计时器返回 false
 function Timer_Create(Group, Name, Time, Func, Mode = TIMERMODE.NONE, LoopCount = 0){
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	var TimerStruct = {
 		Type: "None",
 		Pause: false,

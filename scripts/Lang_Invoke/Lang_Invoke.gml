@@ -5,7 +5,7 @@
 /// @returns {string|bool} 若为获取模式，返回对应文本或 "Not Found"；若为设置模式，成功添加返回 true，已存在则返回 false
 
 function Lang_Invoke(Name, Text = undefined){
-	var Lang = global.structure.Invoke("Language");
+	var Lang = StorageData.Invoke("Language");
     
     if (Text != undefined) {
 		if (Lang_IsExist(Name)) return false

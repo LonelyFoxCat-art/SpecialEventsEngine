@@ -1,5 +1,5 @@
 function Player_Invoke(Variable, Variable2, Variable3){
-	var PlayerData = global.structure.Invoke("Player");
+	var PlayerData = StorageData.Invoke("Player");
 	var PlayerId = 0, Key, Value, IsGet = true;
 	
 	if (is_string(Variable)) {;

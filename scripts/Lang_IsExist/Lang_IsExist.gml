@@ -4,7 +4,7 @@
 /// @returns {bool} 存在返回 true，否则返回 false
 
 function Lang_IsExist(Name){
-	var Lang = global.structure.Invoke("Language");
+	var Lang = StorageData.Invoke("Language");
 	var LangKey = struct_get_names(Lang.Date);
 	var LangCount = array_length(LangKey);
 	

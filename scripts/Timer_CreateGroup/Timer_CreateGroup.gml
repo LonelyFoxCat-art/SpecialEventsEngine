@@ -3,7 +3,7 @@
 /// @arg {string} Name - 计时器组的唯一名称
 /// @returns {struct|bool} 创建成功返回计时器组结构体，已存在同名组返回 false
 function Timer_CreateGroup(Name){
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	var TimerGroupStruct = {
 		Type: "Group",
 		Timers: {},

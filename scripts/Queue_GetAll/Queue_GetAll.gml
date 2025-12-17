@@ -5,6 +5,6 @@
 
 function Queue_GetAll(Name) {
     if (!Queue_IsExist(Name)) return [];
-    var Queue = global.structure.Invoke("Queue");
+    var Queue = StorageData.Invoke("Queue");
     return array_slice(Queue.QueueList[$ Name].data, 0, array_length(Queue.QueueList[$ Name].data));
 }

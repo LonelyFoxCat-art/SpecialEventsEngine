@@ -4,7 +4,7 @@
 /// @returns {bool} 如果任一关联按键在当前帧被按下则返回 true，否则返回 false
 
 function Input_IsPressed(Name) {
-	var Input = global.structure.Invoke("Input");
+	var Input = StorageData.Invoke("Input");
     if (!Input_IsExist(Name)) return false;
 
 	var KeyInfo = Input.KeyList[$ Name];

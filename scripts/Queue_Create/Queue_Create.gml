@@ -9,7 +9,7 @@ function Queue_Create(Name, type = QueueType.DEFAULT, maxSize = -1) {
 	if (type == QueueType.CIRCULAR && maxSize <= 0) return false;
     if (Queue_IsExist(Name)) return false;
     
-    var Queue = global.structure.Invoke("Queue");
+    var Queue = StorageData.Invoke("Queue");
     
     Queue.QueueList[$ Name] = {
         type: type,

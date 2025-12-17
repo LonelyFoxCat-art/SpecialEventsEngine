@@ -6,7 +6,7 @@
 /// @returns {bool} 注册成功返回 true，若名称已存在返回 false
 
 function Input_Register(Name, Keys, Mode = InputMode.ALL){
-	var Input = global.structure.Invoke("Input");
+	var Input = StorageData.Invoke("Input");
 	if (Input_IsExist(Name)) return false;
 	
 	var keyArray = [];

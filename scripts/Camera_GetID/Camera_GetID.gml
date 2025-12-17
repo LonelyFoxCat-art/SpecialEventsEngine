@@ -1,4 +1,4 @@
 function Camera_GetID(){
-	var CameraDate = global.structure.Invoke("Camera");
+	var CameraDate = StorageData.Invoke("Camera");
 	return CameraDate.Camera;
 }

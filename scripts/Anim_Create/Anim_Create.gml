@@ -15,7 +15,7 @@ function Anim_Create(Target, VarName, Tween, Start, Finish, Duration, Delay = 0)
     if (!is_string(VarName) || VarName == "") return "";
     if (is_undefined(Finish)) return "";
 
-    var Anim = global.structure.Invoke("Animation");
+    var Anim = StorageData.Invoke("Animation");
 	
     if (is_undefined(Start)) {
         if (variable_exists(Target, VarName)) {

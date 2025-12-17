@@ -4,7 +4,7 @@
 /// @arg {string} GroupName - 组名称，若为 -1 则在全局计时器列表中查找
 /// @returns {bool} 操作成功返回 true，找不到计时器或参数错误返回 false
 function Timer_Resume(Name, GroupName = -1) {
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	
 	if (GroupName != -1) {
 		if (!Timer_IsGroup(GroupName)) return false;

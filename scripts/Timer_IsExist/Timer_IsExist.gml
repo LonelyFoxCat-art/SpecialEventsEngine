@@ -4,7 +4,7 @@
 /// @arg {string} GroupName - 计时器组名称，如果提供则只在指定组中查找（默认 -1 表示全局查找）
 /// @returns {bool} 计时器存在返回 true，不存在返回 false
 function Timer_IsExist(Name, GroupName = -1) {
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	
 	if (GroupName != -1) {
 		var Group = Timer.TimerList[$ GroupName];

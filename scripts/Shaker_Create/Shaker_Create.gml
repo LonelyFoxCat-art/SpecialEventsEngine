@@ -9,7 +9,7 @@
 /// @returns {bool} 若已存在同目标同变量的抖动项并被更新，返回 true；否则为新建，返回 false
 
 function Shaker_Create(Target, VarName, Shake, Speed = 0, Random = false, Decrease = 1){
-	var Shaker = global.structure.Invoke("Shaker");
+	var Shaker = StorageData.Invoke("Shaker");
 	var ShakerIndex = Shaker_IsExist(Target, VarName);
 	show_debug_message("ShakerIndex:"+string(ShakerIndex))
     var newShake = {

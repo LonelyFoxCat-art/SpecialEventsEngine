@@ -4,8 +4,8 @@
 /// @returns {bool} 若语言已存在返回 false；若成功加载或文件不存在则返回 true
 
 function Lang_Set(Language){
-	var Lang = global.structure.Invoke("Language");
-	var Path = global.Path.Lang + Lang.File + ".json";
+	var Lang = StorageData.Invoke("Language");
+	var Path = PATH_LANG + Lang.File + ".json";
 	var content = "";
 	
 	for (var i = 0; i < array_length(Lang.List); i++) {

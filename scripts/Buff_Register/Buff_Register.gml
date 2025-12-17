@@ -9,7 +9,7 @@
 
 function Buff_Register(Name, Duration, ApplyFn = undefined, UpdateFn = undefined, RemoveFn = undefined){
 	if (Buff_IsExist(Name)) return false;
-	var Buff = global.structure.Invoke("Buff");
+	var Buff = StorageData.Invoke("Buff");
 	
 	var newBuff = {
         Name: Name,

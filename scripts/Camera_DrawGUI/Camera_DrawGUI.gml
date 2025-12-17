@@ -1,5 +1,4 @@
-function Camera_DrawGUI(){
-	var Camera = global.structure.Invoke("Camera");
+function Camera_DrawGUI(Camera){
 	var Fader = Camera.Fader;
 	
 	draw_surface(application_surface, 0, 0);

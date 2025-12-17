@@ -5,7 +5,7 @@
 /// @returns {int} 若存在，返回其在 ShakerList 中的索引；否则返回 -1
 
 function Shaker_IsExist(Target, VarName) {
-    var Shaker = global.structure.Invoke("Shaker");
+    var Shaker = StorageData.Invoke("Shaker");
     var List = Shaker.ShakerList;
     for (var i = 0; i < array_length(List); i++) {
         if (List[i].target == Target && List[i].varname == VarName) {

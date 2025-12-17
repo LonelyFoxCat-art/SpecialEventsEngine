@@ -3,7 +3,7 @@
 /// @arg {string} Name - 要移除的计时器组名称
 /// @returns {bool} 成功移除返回 true，组不存在返回 false
 function Timer_RemoveGroup(Name){
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	
 	if (!Timer_IsGroup(Name)) return false;
 	

@@ -4,7 +4,7 @@
 /// @arg {string} GroupName - 计时器组名称，如果提供则在指定组中查找（默认 -1 表示全局查找）
 /// @returns {real} 剩余时间（秒），无效时返回 -1
 function Timer_GetTimeLeft(Name, GroupName = -1) {
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	var TimerDate = undefined;
 	
 	if (GroupName != -1) {

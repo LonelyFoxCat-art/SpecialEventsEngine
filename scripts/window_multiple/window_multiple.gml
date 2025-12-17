@@ -1,10 +1,11 @@
 /// @function                  window_get_multiple(DesignWidth, DesignHeight, [OffsetX], [OffsetY])
+/// @description               计算窗口/全屏模式下的自适应缩放参数，保持原始宽高比
 /// @param      {real}         DesignWidth   - 设计分辨率宽度
 /// @param      {real}         DesignHeight  - 设计分辨率高度
 /// @param      {real}         [OffsetX]     - 设计坐标系X偏移（默认0）
 /// @param      {real}         [OffsetY]     - 设计坐标系Y偏移（默认0）
-/// @returns    {struct}                     - 包含缩放倍数和偏移量的结构体
-/// @description               计算窗口/全屏模式下的自适应缩放参数，保持原始宽高比
+/// @returns    {self}						 - 包含缩放倍数和偏移量的结构体
+
 function window_get_multiple(DesignWidth, DesignHeight, OffsetX = 0, OffsetY = 0) {
     // 参数验证
     DesignWidth  = max(1, abs(real(DesignWidth)));

@@ -5,7 +5,7 @@
 
 function Queue_Clear(Name) {
     if (!Queue_IsExist(Name)) return false;
-    var Queue = global.structure.Invoke("Queue");
+    var Queue = StorageData.Invoke("Queue");
     Queue.QueueList[$ Name].data = [];
     return true;
 }

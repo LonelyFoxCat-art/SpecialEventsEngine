@@ -4,7 +4,7 @@
 
 function Lang_Init(){
 	return { 
-		List: filefind(global.Path.Lang, "*.json"),
+		List: filefind(PATH_LANG, "*.json"),
 		File: "chinese", 
 		Date: { }, 
 		Custom: Lang_Custom,

@@ -3,7 +3,7 @@
 /// @arg {string} Name - 计时器组的名称
 /// @returns {bool} 操作成功返回 true，找不到组或参数错误返回 false
 function Timer_ResumeGroup(Name) {
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 
 	if (!Timer_IsGroup(Name)) return false;
 	

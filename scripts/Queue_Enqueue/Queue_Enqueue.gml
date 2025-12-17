@@ -8,7 +8,7 @@
 function Queue_Enqueue(Name, value, priority = 0) {
     if (!Queue_IsExist(Name)) return false;
     
-    var Queue = global.structure.Invoke("Queue");
+    var Queue = StorageData.Invoke("Queue");
     var QueueDate = Queue.QueueList[$ Name];
     
     if (QueueDate.type == QueueType.UNIQUE) {

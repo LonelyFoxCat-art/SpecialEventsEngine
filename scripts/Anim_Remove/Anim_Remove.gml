@@ -6,7 +6,7 @@
 /// @returns {bool} 若成功移除至少一个动画返回 true，否则返回 false
 
 function Anim_Remove(Target, VarName = "") {
-    var Anim = global.structure.Invoke("Animation");
+    var Anim = StorageData.Invoke("Animation");
     var deleted = false;
     var list = Anim.AnimationList;
     var len = array_length(list);

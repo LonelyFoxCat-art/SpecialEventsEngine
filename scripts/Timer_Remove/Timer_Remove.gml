@@ -4,7 +4,7 @@
 /// @arg {string} GroupName - 可选，目标组的名称，若为 -1 则从主列表中移除
 /// @returns {bool} 移除成功返回 true，未找到或组不存在返回 false
 function Timer_Remove(Name, GroupName = -1) {
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	
 	if (GroupName != -1) {
 		if (!Timer_IsGroup(GroupName)) return false;

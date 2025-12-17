@@ -3,7 +3,7 @@
 /// @arg {string} Name - 计时器或计时器组的名称
 /// @returns {bool} 是计时器组返回 true，否则返回 false
 function Timer_IsGroup(Name) {
-	var Timer = global.structure.Invoke("Timer");
+	var Timer = StorageData.Invoke("Timer");
 	var item = Timer.TimerList[$ Name];
 	
 	if (item == undefined) return false;

@@ -3,7 +3,7 @@
 /// @arg {struct} Lang - 语言配置结构体，需包含 File（文件名，不含扩展名）和 Date（要保存的语言数据）
 
 function Lang_Update(Lang){
-	var Path = global.Path.Lang + Lang.File + ".json";
+	var Path = PATH_LANG + Lang.File + ".json";
 	
 	if (!file_exists(Path)) {
 		var json_str = json_stringify(Lang.Date, true);

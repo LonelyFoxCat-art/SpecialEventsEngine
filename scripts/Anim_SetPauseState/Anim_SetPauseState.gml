@@ -5,7 +5,7 @@
 /// @returns {bool} 若找到并成功设置返回 true，否则返回 false
 
 function Anim_SetPauseState(AnimName, state) {
-	var AnimSystem = global.structure.Invoke("Animation");
+	var AnimSystem = StorageData.Invoke("Animation");
     var list = AnimSystem.AnimationList;
     for (var i = 0; i < array_length(list); i++) {
         var entry = list[i];

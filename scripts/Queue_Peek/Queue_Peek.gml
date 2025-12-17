@@ -5,7 +5,7 @@
 
 function Queue_Peek(Name) {
     if (!Queue_IsExist(Name)) return undefined;
-    var QueueDate = global.structure.Invoke("Queue").QueueList[$ Name];
+    var QueueDate = StorageData.Invoke("Queue").QueueList[$ Name];
     var Length = array_length(QueueDate.data);
     if (Length == 0) return undefined;
     

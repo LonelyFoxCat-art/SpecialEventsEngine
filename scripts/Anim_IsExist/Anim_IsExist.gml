@@ -6,7 +6,7 @@
 /// @returns {bool} 若存在匹配的动画返回 true，否则返回 false
 
 function Anim_IsExist(Target, VarName = "") {
-	var Anim = global.structure.Invoke("Animation");
+	var Anim = StorageData.Invoke("Animation");
 	var animList = Anim.AnimationList;
 	
 	for (var i = 0; i < array_length(animList); i++) {

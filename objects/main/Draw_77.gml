@@ -1,1 +1,1 @@
-global.structure.Renewal("DrawPost");
+Store.Renewal("DrawPost");

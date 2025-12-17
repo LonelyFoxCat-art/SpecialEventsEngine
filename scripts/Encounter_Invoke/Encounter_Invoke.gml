@@ -1,5 +1,5 @@
 function Encounter_Invoke(id, Name, Value = undefined){
-	var Encounter = global.structure.Invoke("Encounter");
+	var Encounter = StorageData.Invoke("Encounter");
 	if (id < 0 && id > array_length(Encounter.EncounterList)) return false;
 	var EncounterDate = Encounter.EncounterList[id];
 	

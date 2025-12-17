@@ -4,6 +4,6 @@
 /// @returns {bool} 存在返回 true，否则返回 false
 
 function Queue_IsExist(Name){
-	var QueueList = global.structure.Invoke("Queue").QueueList;
+	var QueueList = StorageData.Invoke("Queue").QueueList;
 	return struct_exists(QueueList, Name);
 }

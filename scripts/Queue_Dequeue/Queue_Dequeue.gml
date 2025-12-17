@@ -6,7 +6,7 @@
 function Queue_Dequeue(Name) {
     if (!Queue_IsExist(Name)) return undefined;
     
-    var Queue = global.structure.Invoke("Queue");
+    var Queue = StorageData.Invoke("Queue");
     var QueueDate = Queue.QueueList[$ Name];
     var Length = array_length(QueueDate.data);
     
