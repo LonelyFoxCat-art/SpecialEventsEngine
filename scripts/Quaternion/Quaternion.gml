@@ -15,7 +15,7 @@ function is_quat(quat) {
 /// @arg {real} z - 当 x 为数值或 vec2 时，作为 w 的补充参数
 /// @arg {real} w - 当 x 为数值、vec2 或 vec3 时，指定 w 分量
 /// @returns {struct} 包含四元数数据和方法的结构体
-
+Quaternion()
 function Quaternion(x, y, z, w) {
 	var QuaternionStruct = {
 		type: "Quaternion",

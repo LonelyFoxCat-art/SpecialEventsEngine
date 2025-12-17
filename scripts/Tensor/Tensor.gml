@@ -13,7 +13,7 @@ function is_tensor(tensor) {
 /// @arg {array} shape - 张量的形状（维度大小列表），默认为空数组（标量）
 /// @arg {any} data - 初始化数据，若未提供则按 shape 生成全 0 数据
 /// @returns {struct} 返回具有 Tensor 接口的结构体，包含 shape、data 及一系列操作方法
-
+Tensor()
 function Tensor(shape = [], data = undefined) {
     var TensorStruct = {
 		type: "Tensor",
