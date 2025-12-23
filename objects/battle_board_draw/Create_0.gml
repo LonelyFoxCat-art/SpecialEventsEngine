@@ -1,3 +1,4 @@
+global.BoardList = []
 surface_extra = -1		//战斗框外
 surface_cover = -1		//战斗框里
 surface_mask = -1		//透明区域

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"RelativeContains",
+  "%Name":"Battle_BlueSoul",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"RelativeContains",
+  "name":"Battle_BlueSoul",
   "parent":{
-    "name":"Collision",
-    "path":"folders/脚本/Tool/Collision.yy",
+    "name":"Soul",
+    "path":"folders/脚本/Battle/Soul.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

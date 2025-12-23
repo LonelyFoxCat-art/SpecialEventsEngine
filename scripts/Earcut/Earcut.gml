@@ -1,3 +1,9 @@
+/// @func Earcut(outer, holes)
+/// @desc 对带孔洞的简单多边形进行三角剖分，返回三角形索引数组
+/// @arg {array} outer - 外边界顶点数组，每个元素为 [x, y] 坐标
+/// @arg {array} holes - 孔洞顶点数组的数组，每个子数组表示一个孔洞，元素为 [x, y] 坐标
+/// @returns {array} 三角形索引数组，每三个连续整数构成一个三角形（引用原始 outer 的顶点索引）
+
 function Earcut(outer, holes) {
     // 节点结构定义
     var NodeStruct = {
@@ -406,7 +412,7 @@ function Earcut(outer, holes) {
 	            cur = nodes[cur].next;
 	            count++;
 	        }
-	        chain[array_length(chain)] = end;
+	        chain[array_length(chain)] = _end;
 	        return chain;
 	    },
     

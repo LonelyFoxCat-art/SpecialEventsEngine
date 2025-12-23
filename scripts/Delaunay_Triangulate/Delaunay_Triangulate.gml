@@ -7,7 +7,7 @@ function Delaunay_Triangulate(points) {
     var n = array_length(points);
     if (n < 3) return [];
 
-    // === Step 1: 构建超级三角形 ===
+    // === 构建超级三角形 ===
     var min_x = points[0].x, max_x = points[0].x;
     var min_y = points[0].y, max_y = points[0].y;
     for (var i = 1; i < n; i++) {
@@ -50,12 +50,6 @@ function Delaunay_Triangulate(points) {
             var a = all_points[tri[0]];
             var b = all_points[tri[1]];
             var c = all_points[tri[2]];
-
-            // 计算 4x4 行列式判断 p 是否在 abc 外接圆内
-            // |ax ay ax²+ay² 1|
-            // |bx by bx²+by² 1|
-            // |cx cy cx²+cy² 1|
-            // |px py px²+py² 1|
 
             var ax = a.x, ay = a.y;
             var bx = b.x, by = b.y;

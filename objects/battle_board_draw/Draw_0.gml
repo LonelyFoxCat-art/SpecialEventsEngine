@@ -1,10 +1,7 @@
-var Inst = InstanceGetList(battle_board)
-array_sort(Inst, function(a, b) {
-if (a.depth == b.depth) return a.Index > b.Index;
-	return a.depth < b.depth;
-})
-
-for (var i = 0; i < array_length(Inst); i++) if (instance_exists(Inst[i])) with(Inst[i]) event_user(0);
+for (var i = 0; i < array_length(global.BoardList); i++) {
+	if !(instance_exists(global.BoardList[i])) array_delete(global.BoardList, i, 1);
+	with(global.BoardList[i]) event_user(0);
+}
 
 draw_set_alpha(1);
 surface_set_target(surface);

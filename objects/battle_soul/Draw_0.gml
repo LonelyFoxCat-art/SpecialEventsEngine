@@ -9,3 +9,14 @@
 //}
 
 draw_self()
+
+draw_set_font(font_mono)
+draw_text(0,0,"Move:"+string(move))
+
+var s = false
+for(var i = 0; i < array_length(global.BoardList); i ++) {
+	if !global.BoardList[i].cover continue;
+	if global.BoardList[i].Contains(x, y + sprite_height/2) s = true
+}
+
+if (s) draw_text(0, 20, "Board True");

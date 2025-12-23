@@ -1,5 +1,6 @@
 depth = -1000
 
+moveable = false
 board_follow = false
 
 // 无敌时间
@@ -10,5 +11,5 @@ impact = false
 move = 0
 
 // 灵魂类型接口
-OnSoul = undefined;
+OnSoul = Battle_BlueSoul;
 OnMove = undefined;

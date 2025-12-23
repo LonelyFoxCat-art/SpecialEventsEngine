@@ -16,10 +16,10 @@ if(inv > 0){
 	}
 }
 
-if (!is_undefined(OnSoul) && moveable) OnSoul(id);
+if (!is_method(OnSoul)) OnSoul(id);
 
-if Input_IsPress(KEY.UP) y -= 2
-if Input_IsPress(KEY.DOWN) y += 2
-if Input_IsPress(KEY.LEFT) x -= 2
-if Input_IsPress(KEY.RIGHT) x += 2
+//if Input_IsPress(KEY.UP) y -= 2
+//if Input_IsPress(KEY.DOWN) y += 2
+//if Input_IsPress(KEY.LEFT) x -= 2
+//if Input_IsPress(KEY.RIGHT) x += 2
 
