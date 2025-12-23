@@ -6,7 +6,7 @@
   "name":"Tensor",
   "parent":{
     "name":"LinearAlgebra",
-    "path":"folders/脚本/Tool/Math/LinearAlgebra.yy",
+    "path":"folders/脚本/Math/LinearAlgebra.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

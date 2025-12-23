@@ -22,17 +22,17 @@ draw_set_color(c_black)
 draw_rectangle(37,235+35*(menu_num-1),157,275+35*(menu_num-1),false)
 draw_set_color(c_white)
 
-draw_text_transformed(42,240+35*(menu_num-1),string(main.hortime)+":"+string(main.mintime),2,2,0)
+draw_text_transformed(42,240+35*(menu_num-1),string(main.mintime)+":"+string(round(main.time)),2,2,0)
 draw_set_color(c_white)
 
 for(var i=0;i<menu_num;i++){
 draw_text_transformed_color(75,175+35*i,_menu_name[i],2,2,0,color[i],color[i],color[i],color[i],1)
 }
 draw_set_font(font_add("Determination Mono.ttf", 10, false, false, 32, 128))
-draw_text_transformed(42,62,"Player",2,2,0)
-draw_text_transformed(42,92,"Lv "+string(1),1.5,1.5,0)
-draw_text_transformed(42,110,"Hp "+string(20)+"/"+string(20),1.5,1.5,0)
-draw_text_transformed(42,128,"G  "+string(0),1.5,1.5,0)
+draw_text_transformed(42,60,"Player",2,2,0)
+draw_text_transformed(42,90,"Lv "+string(1),1.5,1.5,0)
+draw_text_transformed(42,106,"Hp "+string(20)+"/"+string(20),1.5,1.5,0)
+draw_text_transformed(42,124,"G  "+string(0),1.5,1.5,0)
 
 if(_menu = 0){
 draw_sprite(spr_battle_soul,0,58,191+35*menu_nowbutton)

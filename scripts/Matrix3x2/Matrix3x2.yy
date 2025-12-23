@@ -6,7 +6,7 @@
   "name":"Matrix3x2",
   "parent":{
     "name":"Matrix",
-    "path":"folders/脚本/Tool/Math/LinearAlgebra/Matrix.yy",
+    "path":"folders/脚本/Math/LinearAlgebra/Matrix.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

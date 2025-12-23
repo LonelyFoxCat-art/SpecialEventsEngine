@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"arcsinh",
+  "%Name":"Delaunay_Triangulate",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"arcsinh",
+  "name":"Delaunay_Triangulate",
   "parent":{
-    "name":"Trigonometry",
-    "path":"folders/脚本/Math/Geometry/Trigonometry.yy",
+    "name":"Delaunay",
+    "path":"folders/脚本/Math/Delaunay.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

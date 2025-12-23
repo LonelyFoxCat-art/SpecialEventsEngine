@@ -6,7 +6,7 @@
   "name":"Delaunay_IsConvex",
   "parent":{
     "name":"Delaunay",
-    "path":"folders/脚本/Tool/Math/Delaunay.yy",
+    "path":"folders/脚本/Math/Delaunay.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

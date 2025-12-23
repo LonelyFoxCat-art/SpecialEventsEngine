@@ -1,4 +1,4 @@
-if !instance_exists(battle_board_draw) instance_create(0, 0, battle_board_draw)
+if !instance_exists(battle_board_draw) instance_create(0, 0, battle_board_draw, -500)
 
 depth = -500
 
@@ -11,14 +11,13 @@ Vertex_Outline = [];
 DivideVertex = [];
 isCollide = array_create(4, false)
 
-width = 70
-height = 65
+width = 165
+height = 165
 
 color = c_white
 alpha = 1
 
-
-
+angle = 0
 
 // 判断点是否在旋转后的多边形内
 function Contains(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex) {

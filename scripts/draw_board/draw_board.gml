@@ -6,6 +6,7 @@
 /// @param {color} border_color 边框颜色
 /// @param {color} fill_color 内部填充的颜色
 /// @param {array} [scale] 可选数组[left，top，right，bottom]指定内部偏移量
+
 function draw_board(x, y, width, height, border_color, fill_color, scale = [5,5,5,5]) {
     if (array_length(scale) < 4) {
         scale = [0,0,0,0];

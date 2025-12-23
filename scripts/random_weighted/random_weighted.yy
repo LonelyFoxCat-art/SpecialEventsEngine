@@ -6,7 +6,7 @@
   "name":"random_weighted",
   "parent":{
     "name":"Random",
-    "path":"folders/脚本/Tool/Math/Random.yy",
+    "path":"folders/脚本/Math/Random.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

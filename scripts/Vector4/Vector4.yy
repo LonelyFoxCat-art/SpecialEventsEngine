@@ -6,7 +6,7 @@
   "name":"Vector4",
   "parent":{
     "name":"Vector",
-    "path":"folders/脚本/Tool/Math/LinearAlgebra/Vector.yy",
+    "path":"folders/脚本/Math/LinearAlgebra/Vector.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"shuffle_array",
   "parent":{
     "name":"NumberTheory",
-    "path":"folders/脚本/Tool/Math/NumberTheory.yy",
+    "path":"folders/脚本/Math/NumberTheory.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

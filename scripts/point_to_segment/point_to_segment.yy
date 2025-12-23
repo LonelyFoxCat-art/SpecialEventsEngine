@@ -6,7 +6,7 @@
   "name":"point_to_segment",
   "parent":{
     "name":"Geometry",
-    "path":"folders/脚本/Tool/Math/Geometry.yy",
+    "path":"folders/脚本/Math/Geometry.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"smooth_damp",
   "parent":{
     "name":"Math",
-    "path":"folders/脚本/Tool/Math.yy",
+    "path":"folders/脚本/Math.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

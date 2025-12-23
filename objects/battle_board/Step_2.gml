@@ -1,3 +1,5 @@
+image_angle += angle
+
 DivideVertex = [];
 
 var size = array_length(Vertex);
@@ -7,5 +9,5 @@ for (var i = 0; i < size; i++) {
     Vertex_Outline[i] = RotAndPixelScale(Vertex[i], 0, 5);
 }
 
-var tri_indices = Delaunay_EarClipping(Vertex_Outline);
+var tri_indices = Delaunay_Triangulate(Vertex_Outline);
 DivideVertex = tri_indices;

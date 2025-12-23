@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"microseconds",
+  "%Name":"Earcut",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"microseconds",
+  "name":"Earcut",
   "parent":{
-    "name":"脚本",
-    "path":"folders/脚本.yy",
+    "name":"Delaunay",
+    "path":"folders/脚本/Math/Delaunay.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
