@@ -1,58 +1,57 @@
-# 特殊事件引擎 (Special Events Engine)
+# Special Events Engine
 
-## 项目简介
-特殊事件引擎是一个基于 GameMaker Studio 开发的游戏框架或引擎，提供了丰富的功能模块，用于创建具有复杂交互和动画效果的游戏项目。该项目包含了战斗系统、输入处理、相机控制、音频管理、数据结构操作等多种功能。
+## Project Overview  
+The Special Events Engine is a game framework or engine developed using GameMaker Studio, offering a rich set of modular features for creating games with complex interactions and animation effects.
 
-## 功能特性
-### 核心系统
-- **战斗系统**: 包含棋盘式战斗机制，支持复杂的战斗逻辑和动画效果
-- **输入管理系统**: 提供了灵活的输入检测和自定义输入功能
-- **相机控制系统**: 支持多种相机效果，包括震动、全屏切换等功能
-- **音频管理**: 音频处理和播放控制功能
+## Features  
 
-### 数据结构与算法
-- **队列系统**: 提供完整的队列数据结构操作
-- **计时器系统**: 灵活的时间管理和定时功能
-- **数学函数库**: 包括向量运算、矩阵变换、三角函数等扩展
-- **几何算法**: 包含碰撞检测、图形绘制、空间变换等功能
+### Core Systems  
+- **Battle System**: Features a board-based combat mechanism with support for sophisticated battle logic and animated effects.  
+- **Input Management System**: Provides flexible input detection and customizable input handling.  
+- **Camera Control System**: Supports various camera effects, including screen shake, full-screen transitions, and more.
 
-### 动画与视觉效果
-- **高级动画系统**: 支持贝塞尔曲线动画、自定义动画路径
-- **着色器效果**: 包含多种视觉效果，如镜像对称、手绘风格、模糊、雾效等
-- **粒子与特效**: 支持各种视觉增强效果
+### Data Structures & Algorithms  
+- **Queue System**: Full-featured queue data structure operations.  
+- **Timer System**: Flexible time management and scheduling functionality.  
+- **Math Library**: Extended mathematical utilities including vector operations, matrix transformations, trigonometric functions, etc.  
+- **Geometric Algorithms**: Includes collision detection, shape rendering, spatial transformations, and other geometry-related functions.
 
-### 游戏机制
-- **玩家系统**: 角色属性管理，包括攻击力、防御力、生命值、速度等
-- **增益/减益系统**: Buff/Debuff机制，可自定义效果
-- **遭遇战系统**: 支持随机或特定的遭遇事件
-- **语言本地化**: 支持多语言切换
+### Animation & Visual Effects  
+- **Advanced Animation System**: Supports Bezier curve animations and custom animation paths.  
+- **Shader Effects**: Multiple visual effects such as mirror symmetry, hand-drawn style, blur, fog, and more.
 
-## 目录结构
+### Game Mechanics  
+- **Player System**: Manages character attributes such as attack, defense, HP, speed, and others.  
+- **Buff/Debuff System**: Customizable status effect (buff/debuff) mechanics.  
+- **Encounter System**: Supports both random and scripted encounter events.  
+- **Localization**: Multi-language support with easy language switching.
+
+## Directory Structure  
 ```
 SpecialEventsEngine/
-├── datafiles/          # 数据文件，包括字体等资源
-├── fonts/              # 字体资源
-├── notes/              # 项目说明文档
-├── objects/            # 游戏对象
-│   ├── battle/         # 战斗相关对象
-│   ├── battle_board/   # 战斗棋盘对象
-│   ├── battle_board_draw/ # 战斗棋盘绘制对象
-│   ├── battle_soul/    # 战斗灵魂对象
-│   ├── main/           # 主要对象
-│   ├── obj_player/     # 玩家对象
-│   └── ui_menu/        # 用户界面菜单对象
-├── options/            # 平台配置选项
-├── rooms/              # 游戏场景
-├── scripts/            # 脚本文件
-├── shaders/            # 着色器文件
-└── sprites/            # 精灵图像资源
+├── datafiles/          # Data files, including fonts and other assets
+├── fonts/              # Font resources
+├── notes/              # Project documentation and notes
+├── objects/            # Game objects
+│   ├── battle/         # Battle-related objects
+│   ├── battle_board/   # Battle board objects
+│   ├── battle_board_draw/ # Battle board rendering objects
+│   ├── battle_soul/    # Battle soul objects
+│   ├── main/           # Main game objects
+│   ├── obj_player/     # Player character objects
+│   └── ui_menu/        # UI menu objects
+├── options/            # Platform-specific configuration options
+├── rooms/              # Game rooms (scenes)
+├── scripts/            # Script files
+├── shaders/            # Shader files
+└── sprites/            # Sprite assets
 ```
 
-## 安装与使用
-1. 将项目文件导入到 GameMaker Studio 中
-2. 打开 `SpecialEventsEngine.yyp` 项目文件
-3. 根据需要修改配置和代码
-4. 编译并运行项目
+## Installation & Usage  
+1. Import the project files into GameMaker Studio.  
+2. Open the `SpecialEventsEngine.yyp` project file.  
+3. Modify configurations and code as needed.  
+4. Compile and run the project.
 
-## 贡献
-欢迎提交 Issue 和 Pull Request 来帮助改进这个项目。
+## Contributions  
+Issues and Pull Requests are welcome to help improve this project.
