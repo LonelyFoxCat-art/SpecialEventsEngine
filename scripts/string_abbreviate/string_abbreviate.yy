@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"string_abbreviate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"string_abbreviate",
+  "parent":{
+    "name":"String",
+    "path":"folders/脚本/Tool/String.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

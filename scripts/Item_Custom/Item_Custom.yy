@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Item_Custom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Item_Custom",
+  "parent":{
+    "name":"Item",
+    "path":"folders/脚本/System/Item.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

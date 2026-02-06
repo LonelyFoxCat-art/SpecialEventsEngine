@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_SetTurnTime",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_SetTurnTime",
+  "parent":{
+    "name":"Board",
+    "path":"folders/脚本/Battle/Menu/Turn/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -97,8 +97,8 @@ function Limit(_x, _y, _listVertex = cover ? Vertex_Outline : Vertex) {
     return [r.x + x, r.y + y];
 }
 
-if !instance_exists(battle_board_draw) instance_create(0, 0, battle_board_draw, -500)
-depth = -500
+if !instance_exists(battle_board_draw) instance_create(0, 0, battle_board_draw)
+depth = -1000
 
 Index = 0
 
@@ -115,4 +115,4 @@ height = 165
 color = c_white
 alpha = 1
 
-angle = 0
+rotate = 0

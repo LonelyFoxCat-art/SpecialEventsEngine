@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MakeStabAlert",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeStabAlert",
+  "parent":{
+    "name":"Bullet",
+    "path":"folders/脚本/Battle/Bullet.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

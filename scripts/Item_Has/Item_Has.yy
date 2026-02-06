@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Item_Has",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Item_Has",
+  "parent":{
+    "name":"Player",
+    "path":"folders/脚本/System/Item/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

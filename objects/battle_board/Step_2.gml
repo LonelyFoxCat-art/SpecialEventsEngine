@@ -1,4 +1,4 @@
-image_angle += angle
+image_angle += rotate
 
 DivideVertex = [];
 

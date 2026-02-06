@@ -1,4 +1,4 @@
-function Player_GetAtkTotal(Player = 0){
-	var PlayerData = Player_Invoke(Player)
+function Player_GetAtkTotal(){
+	var PlayerData = Player_Invoke()
 	return PlayerData.Atk + PlayerData.Bonus.Atk
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseEnemyAction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseEnemyAction",
+  "parent":{
+    "name":"Action",
+    "path":"folders/脚本/Battle/Enemy/Action.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

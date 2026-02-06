@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Battle_BlueSoul",
   "parent":{
-    "name":"Soul",
-    "path":"folders/脚本/Battle/Soul.yy",
+    "name":"Type",
+    "path":"folders/脚本/Battle/Soul/Type.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

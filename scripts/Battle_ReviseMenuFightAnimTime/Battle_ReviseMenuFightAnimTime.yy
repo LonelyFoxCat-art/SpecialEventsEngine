@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseMenuFightAnimTime",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseMenuFightAnimTime",
+  "parent":{
+    "name":"Fight",
+    "path":"folders/脚本/Battle/Menu/Fight.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

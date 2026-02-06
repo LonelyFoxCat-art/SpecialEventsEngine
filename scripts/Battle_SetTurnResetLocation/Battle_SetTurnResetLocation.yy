@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_SetTurnResetLocation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_SetTurnResetLocation",
+  "parent":{
+    "name":"Board",
+    "path":"folders/脚本/Battle/Menu/Turn/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

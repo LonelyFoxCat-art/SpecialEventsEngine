@@ -1,15 +1,14 @@
-depth = -1000
+depth = -1000;
 
-moveable = false
-board_follow = false
+moveable      = false;
+board_follow  = false;
 
 // 无敌时间
-inv = 0
+inv = 0;
 
 // 重力相关
-impact = false
-move = 0
+impact = false;
+move   = 0;
 
 // 灵魂类型接口
-OnSoul = Battle_BlueSoul;
-OnMove = undefined;
+OnSoul = Battle_RedSoul;

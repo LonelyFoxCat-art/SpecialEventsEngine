@@ -1,4 +1,4 @@
-function Player_GetInvTotal(Player = 0){
-	var PlayerData = Player_Invoke(Player)
+function Player_GetInvTotal(){
+	var PlayerData = Player_Invoke()
 	return PlayerData.Inv + PlayerData.Bonus.Inv
 }

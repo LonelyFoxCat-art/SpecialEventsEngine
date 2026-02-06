@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseEnemyHp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseEnemyHp",
+  "parent":{
+    "name":"Attribute",
+    "path":"folders/脚本/Battle/Enemy/Attribute.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

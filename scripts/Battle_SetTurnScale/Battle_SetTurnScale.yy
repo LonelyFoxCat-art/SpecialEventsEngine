@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_SetTurnScale",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_SetTurnScale",
+  "parent":{
+    "name":"Board",
+    "path":"folders/脚本/Battle/Menu/Turn/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

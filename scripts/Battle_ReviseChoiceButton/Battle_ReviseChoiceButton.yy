@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseChoiceButton",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseChoiceButton",
+  "parent":{
+    "name":"Choice",
+    "path":"folders/脚本/Battle/Menu/Choice.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

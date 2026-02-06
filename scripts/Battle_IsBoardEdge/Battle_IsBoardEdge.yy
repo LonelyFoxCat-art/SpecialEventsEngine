@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_IsBoardEdge",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_IsBoardEdge",
+  "parent":{
+    "name":"Board",
+    "path":"folders/脚本/Battle/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

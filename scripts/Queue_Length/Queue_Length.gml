@@ -6,5 +6,5 @@
 function Queue_Length(Name){
 	var Queue = StorageData.Invoke("Queue");
 	if !Queue_IsExist(Name) return 0;
-	return array_length(Queue.QueueList[$ Name].Date);
+	return array_length(Queue.QueueList[$ Name].data);
 }

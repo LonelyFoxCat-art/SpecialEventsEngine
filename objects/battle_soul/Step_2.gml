@@ -1,3 +1,4 @@
+if (Battle_ReviseState() != BATTLE.STATE.INTURN) exit;
 var isInside = [array_create(4, false), array_create(4, false)];
 var limit_index = array_create(4, 0);
 var boardcount = array_length(global.BoardList);

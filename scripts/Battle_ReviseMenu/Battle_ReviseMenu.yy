@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseMenu",
+  "parent":{
+    "name":"Menu",
+    "path":"folders/脚本/Battle/Menu.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

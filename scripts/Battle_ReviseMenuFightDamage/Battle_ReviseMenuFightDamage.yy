@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseMenuFightDamage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseMenuFightDamage",
+  "parent":{
+    "name":"Fight",
+    "path":"folders/脚本/Battle/Menu/Fight.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

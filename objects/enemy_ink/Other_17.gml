@@ -1,0 +1,1 @@
+Battle_StartTurn(0)

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseTurn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseTurn",
+  "parent":{
+    "name":"Turn",
+    "path":"folders/脚本/Battle/Menu/Turn.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

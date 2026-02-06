@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_StartConditionTurn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_StartConditionTurn",
+  "parent":{
+    "name":"Start",
+    "path":"folders/脚本/Battle/Menu/Turn/Start.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

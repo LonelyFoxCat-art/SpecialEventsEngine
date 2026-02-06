@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseEnemy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseEnemy",
+  "parent":{
+    "name":"Enemy",
+    "path":"folders/脚本/Battle/Enemy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

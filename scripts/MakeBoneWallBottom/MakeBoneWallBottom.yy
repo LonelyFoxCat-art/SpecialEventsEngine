@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MakeBoneWallBottom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeBoneWallBottom",
+  "parent":{
+    "name":"Bone",
+    "path":"folders/脚本/Battle/Bullet/Bone.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

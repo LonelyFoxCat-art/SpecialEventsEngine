@@ -1,0 +1,1 @@
+if time > turntime Battle_EndTurn()

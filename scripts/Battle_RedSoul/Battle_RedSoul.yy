@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_RedSoul",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_RedSoul",
+  "parent":{
+    "name":"Type",
+    "path":"folders/脚本/Battle/Soul/Type.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

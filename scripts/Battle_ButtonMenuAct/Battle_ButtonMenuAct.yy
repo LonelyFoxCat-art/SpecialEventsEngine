@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ButtonMenuAct",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ButtonMenuAct",
+  "parent":{
+    "name":"Type",
+    "path":"folders/脚本/Battle/Menu/Button/Type.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -22,7 +22,7 @@ function Queue_Enqueue(Name, value, priority = 0) {
         case QUEUETYPE.CIRCULAR:
         case QUEUETYPE.UNIQUE:
         case QUEUETYPE.LIFO:
-            QueueDate.data = array_push(QueueDate.data, value);
+            array_push(QueueDate.data, value);
             break;
             
         case QUEUETYPE.PRIORITY:
@@ -30,13 +30,13 @@ function Queue_Enqueue(Name, value, priority = 0) {
             var inserted = false;
             for (var i = 0; i < array_length(QueueDate.data); i++) {
                 if (item.priority < QueueDate.data[i].priority) {
-                    QueueDate.data = array_insert(QueueDate.data, i, item);
+                    array_insert(QueueDate.data, i, item);
                     inserted = true;
                     break;
                 }
             }
             if (!inserted) {
-                QueueDate.data = array_push(QueueDate.data, item);
+                array_push(QueueDate.data, item);
             }
             break;
             

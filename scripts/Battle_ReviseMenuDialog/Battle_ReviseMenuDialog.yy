@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Battle_ReviseMenuDialog",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_ReviseMenuDialog",
+  "parent":{
+    "name":"Dialog",
+    "path":"folders/脚本/Battle/Menu/Dialog.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
