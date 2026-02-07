@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MakeRedirectGBlaster",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeRedirectGBlaster",
+  "parent":{
+    "name":"GasterBlaster",
+    "path":"folders/脚本/Battle/Bullet/GasterBlaster.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

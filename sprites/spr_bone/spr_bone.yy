@@ -17,7 +17,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":13,
+  "height":14,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"10335bfe-17cc-40b1-afa4-6e750a47f81f","blendMode":0,"displayName":"default","isLocked":false,"name":"10335bfe-17cc-40b1-afa4-6e750a47f81f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -43,7 +43,7 @@
     ],
     "top":6,
   },
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"Bullet",
     "path":"folders/精灵/Battle/Bullet.yy",
@@ -99,7 +99,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":5,
-    "yorigin":13,
+    "yorigin":7,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

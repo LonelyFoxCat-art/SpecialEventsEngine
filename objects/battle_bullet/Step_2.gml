@@ -49,10 +49,9 @@ if (follow.enabled) {
         }
     }
     
-    var rotated = RotAndPixelScale(follow.offset, follow.config.angle);
-
-    x = follow.pos.x + rotated.x;
-    y = follow.pos.y + rotated.y;
+	var rotated_offset = RotAndPixelScale(follow.offset, follow.config.angle);
+    x = follow.pos.x + rotated_offset.x;
+    y = follow.pos.y + rotated_offset.y;
 	if (follow.config.angle != NewBoardAngle) {
 		image_angle -=  follow.config.angle - NewBoardAngle;
 		NewBoardAngle = follow.config.angle;

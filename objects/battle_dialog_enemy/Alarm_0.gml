@@ -52,4 +52,4 @@ switch(template){
 }
 
 visible=true;
-_inst.text="{shadow false}{color 0 0 0}{speed 2}{font 1}{depth -1100}"+text+"{pause}{end}";
+_inst.text[0]="{shadow 0}{color 0 0 0}{scale 1}{speed 2}{font 1}{depth -1100}"+text+"{paused}{end}";

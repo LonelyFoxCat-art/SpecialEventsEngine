@@ -21,4 +21,13 @@ function Timer_Update(Timer){
 			Timer_Process(item, Timer.TimerList, name);
 		}
 	}
+	
+	for (var i = 0; i < array_length(Timer.TimerTempList); i++) {
+		var TimerData = Timer.TimerTempList[i]
+		TimerData.Time += 1;
+		if (TimerData.Time >= TimerData.MaxTime) {
+			if (TimerData.Callback != undefined && is_method(TimerData.Callback)) TimerData.Callback();
+			array_delete(Timer.TimerTempList, i, 1);
+		}
+	}
 }

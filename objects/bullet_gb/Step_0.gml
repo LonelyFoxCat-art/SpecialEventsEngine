@@ -1,6 +1,3 @@
-if keyboard_check(ord("A")) image_angle --
-if keyboard_check(ord("D")) image_angle ++
-
 if (time > 0) {
 	time --
 } else if (time == 0) {
@@ -25,15 +22,13 @@ if (time > 0) {
 		audio_stop_sound(sound_release);
 		audio_play_sound(sound_release,0,0);
 
-		if !instance_exists(_inst) {
-			_inst = instance_create(0, 0, bullet_gb_beam)
-			_beam_alpha = 1
-			_exit_speed = 0
-		}
+		if !(instance_exists(_inst)) _inst = instance_create(0, 0, bullet_gb_beam)
+		_beam_alpha = 1
+		_exit_speed = 0
 		
 		if(image_yscale >= 2){
-			Shaker_Create(Camera, "X", 2, 1, 1, 1)
-			Shaker_Create(Camera, "Y", 2, 1, 1, 1)
+			Camera_Shaker(2, 1, 1)
+			Camera_Shaker(2, 1, 1)
 		}
 		
 		Mode_Next = "Ing"
@@ -44,10 +39,10 @@ if (time > 0) {
 	} else if (Mode == "Finish") {
 		Anim_Create(id, "_beam_scale", AnimTween.Linear, _beam_scale, -_beam_scale, 10);
 		Anim_Create(id, "_beam_alpha", AnimTween.Linear, 1, -1, 10);
-		time = -1
+		Mode_Next = "Retrieve"
+		time = 10
 	} else if (Mode == "Retrieve") {
-		Anim_Create(id,"image_index",AnimTween.Linear,image_index,-image_index,6);
-		Mode_Next = "Move"
-		time = 6
+		if !(recoil) Anim_Create(id,"image_index",AnimTween.Linear,image_index,-image_index,6);
+		time = -1
 	}
 }

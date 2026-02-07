@@ -9,6 +9,7 @@ function Timer_Init(){
 	
 	return {
 		TimerList: { },
+		TimerTempList: [],
 		UpdateStep: Timer_Update
 	};
 }

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"array_delete_at",
+  "%Name":"MakeBoneBottom",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"array_delete_at",
+  "name":"MakeBoneBottom",
   "parent":{
-    "name":"Array",
-    "path":"folders/脚本/Tool/Array.yy",
+    "name":"Bone",
+    "path":"folders/脚本/Battle/Bullet/Bone.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -9,10 +9,6 @@ if(damage=-1){
 	draw_sprite_ext(spr_battle_damage_block,0,xstart,y,1,1,0,c_gray,1);
 }else if(damage=-3){
 	draw_sprite_ext(spr_battle_damage_nofell,0,xstart,y,1,1,0,c_gray,1);
-}else if(damage=-4){
-	draw_sprite_ext(spr_battle_damage_repelied,0,xstart,y,1,1,0,c_gray,1);
-}else if(damage=-4){
-	draw_sprite_ext(spr_battle_damage_repelled,0,xstart,y,1,1,0,c_gray,1);
 }else if(damage>=0){
 	var STR=string(damage);
 	var LEN=string_length(STR);

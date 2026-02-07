@@ -1,4 +1,3 @@
-depth = -400;
 cover = false
 mode = 0
 duration = -1

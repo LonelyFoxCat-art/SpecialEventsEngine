@@ -1,7 +1,7 @@
 depth=-1000;
 visible=false;
 
-text="";
+text="akbjdnak";
 dir=0;
 show_spike=true;
 wide_spike=true;

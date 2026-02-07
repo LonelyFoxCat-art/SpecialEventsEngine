@@ -5,7 +5,7 @@ image_yscale = 3
 
 _inst = noone
 
-Mode = -1
+Mode = ""
 Mode_Next = "Move"
 
 recoil = true

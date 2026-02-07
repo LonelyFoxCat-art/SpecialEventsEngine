@@ -16,6 +16,6 @@ paused = false;
 instant = false;
 gui = false
 cover = false
-Auto = true
+Auto = false
 
 OnUpdate = undefined
